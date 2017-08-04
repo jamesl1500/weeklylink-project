@@ -1,0 +1,308 @@
+// Dark Primary
+$darkPrimaryColor: #213246;
+
+// Primary
+$primaryColor: #52a6e6;
+
+// Light Primary
+$lightPrimaryColor: #FFCDD2;
+
+// Accent Color
+$accentColor: #FF5252;
+
+// Primary Text Color
+$primaryText: #212121;
+
+// Secondary Text Color
+$secondaryText: #727272;
+
+// Divider Color
+$dividerColor: #B6B6B6;
+
+$primaryFont: 'Titillium Web';
+
+@import 'Reset';
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// Responsive containers
+.navbarContainer{
+  margin: 0% auto;
+
+  @media screen and (min-width: 1200px)
+  {
+    width: 775px;
+  }
+  
+  @media screen and (max-width: 1199px) and (min-width: 850px) {
+    
+  }
+
+  .innerCont {
+    text-align: center;
+
+    position: relative;
+    top: 68px;
+
+    .progressBox {
+      height: 90px;
+      width: 90px;
+
+      display: inline-block;
+
+      border: 5px solid #5a5858;
+      border-radius: 50%;
+
+      background: white;
+    }
+
+    .progressBox.active{
+      background: rgb(189, 223, 199);
+    }
+
+    .divider {
+      height: 5px;
+      width: 60px;
+
+      background: #5a5858;
+
+      display: inline-block;
+      margin-left: 13px;
+      margin-right: 10px;
+
+      position: relative;
+      top: -38px;
+
+      border-radius: 50px;
+    }
+  }
+}
+
+.checkoutContainer{
+  margin: 0% auto;
+
+  @media screen and (min-width: 1200px)
+  {
+    width: 745px;
+  }
+
+  @media screen and (max-width: 1199px) and (min-width: 850px) {
+
+  }
+
+}
+
+// Main styling
+.mainContainer{
+  position: relative;
+  top: -100px;
+
+  .topHead{
+    height: 300px;
+
+    .bottomMain {
+      position: relative;
+      top: 100px;
+
+      .iconsHead {
+
+        .iconsInner{
+
+
+        }
+      }
+
+      .barHold {
+        height: 50px;
+        width: 100%;
+
+        background-color: #ced8d0;
+      }
+    }
+  }
+
+  .checkoutMain{
+
+    .innerCheckoutMain{
+      margin-top: 15px;
+
+      .checkoutPage{
+        border-top: 2px solid #5a5858;
+
+        .topPageHead{
+          background: #bce0c6;
+          padding: 15px;
+
+          margin: 0% auto;
+          float: none;
+
+          margin-top: 5px;
+
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+
+          .innerHead{
+
+            h3{
+              font-weight: 700;
+              font-size: 1.6em;
+
+              color: #5a5858;
+
+              text-align: center;
+            }
+          }
+        }
+
+        .innerPageMain{
+          margin-top: 50px;
+
+          background: #ededed;
+          padding: 20px;
+
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+.alertMain{
+  margin: 0% auto;
+  margin-top: 100px;
+
+  width: 400px;
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  background: white;
+  padding: 30px;
+
+  height: 220px;
+
+  .topNotice{
+    position: relative;
+    top: -60px;
+
+    margin-bottom: -60px;
+
+    .leftIcon{
+      position: relative;
+      z-index: 1000001;
+
+      top: -19px;
+      margin-bottom: -21px;
+
+      i {
+        padding: 18px 20px;
+        display: inline-block;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        border-radius: 100px;
+
+        border: 10px solid white;
+
+        color: white;
+
+        background: #ed1c24;
+
+        font-size: 2.5em;
+      }
+    }
+
+    .textHolderRight{
+      background: #ededed;
+      padding: 15px;
+      border-radius: 5px;
+      
+      h3{
+        font-size: 1.6em;
+        font-weight: 700;
+
+        text-align: center;
+      }
+    }
+  }
+
+  .textMain{
+    position: relative;
+    top: 10px;
+
+    float: left;
+
+    p{
+      text-align: left;
+      line-height: 1.3em;
+    }
+  }
+}
+
+// Checkout page 1
+.checkoutPageFirst{
+
+}
+
+.checkoutPageSecond{
+
+  .innerPageMain{
+    float: none;
+    margin: 0% auto;
+
+    background: white;
+
+    .text-main{
+      background: #ededed;
+      padding: 20px;
+
+      border-radius: 8px;
+
+      h3{
+
+      }
+    }
+  }
+}
+
+.hidden{
+  display: block !important;
+}
+
+// Direction buttons
+.directionButtons{
+  margin-top: 50px;
+
+  text-align: center;
+
+  button{
+    background: #64bf88;
+    padding: 10px 15px;
+
+    color: white;
+    border: none;
+
+    border-radius: 5px;
+
+    margin-right: 10px;
+  }
+}
+
+// Nav items

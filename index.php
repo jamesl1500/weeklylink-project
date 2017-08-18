@@ -34,7 +34,7 @@ $currentTime = time() + 3600;
             <i class="fa fa-calendar" aria-hidden="true"></i>
         </div>
         <div class="textHolderRight col-lg-10 col-md-10 col-sm-10">
-            <h3>Take Notice!</h3>
+            <h3>Notice!</h3>
         </div>
     </div>
     <div class="textMain">

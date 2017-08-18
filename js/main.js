@@ -11,6 +11,22 @@ $(function(){
 
     var mainForm = $("#checkoutMain");
 
+    // Form inputs
+    var weeksInput = $("#weekNumber");
+    var mainAdText = $("#mainText");
+
+    var fullName = $("#fullName");
+    var companyName = $("#companyName");
+    var email = $("#emailFull");
+    var phoneNumber = $("#phoneNumber");
+    var comments = $("#comments");
+
+    var nameoncard = $("#nameoncard");
+    var cardnumber = $("#cardnumber");
+    var expireYear = $("#expireYear");
+    var expireMonth = $("#expireMonth");
+    var cvv = $("#cardCVV");
+
     // Make the selectedoption the selected radio button
     selectedOption.val(selectedOptionRadioButton.val());
 
@@ -44,9 +60,59 @@ $(function(){
         }
     });
 
+    function valid_credit_card(value) {
+        // accept only digits, dashes or spaces
+        if (/[^0-9-\s]+/.test(value)) return false;
+
+        // The Luhn Algorithm. It's so pretty.
+        var nCheck = 0, nDigit = 0, bEven = false;
+        value = value.replace(/\D/g, "");
+
+        for (var n = value.length - 1; n >= 0; n--) {
+            var cDigit = value.charAt(n),
+                nDigit = parseInt(cDigit, 10);
+
+            if (bEven) {
+                if ((nDigit *= 2) > 9) nDigit -= 9;
+            }
+
+            nCheck += nDigit;
+            bEven = !bEven;
+        }
+
+        return (nCheck % 10) == 0;
+    }
+
     function formCheck()
     {
+        if(weeksInput.val() != "" && mainAdText.val() != "")
+        {
+            // For user info
+            if(fullName.val() != "" && companyName.val() != "" && email.val() != "" && phoneNumber.val() != "" && comments.val())
+            {
+                // For billing
+                if(nameoncard.val() != "" && cardnumber.val() != "" && expireYear.val() != "" && expireMonth.val() != "" && cvv.val() != "")
+                {
+                    // Check credit card
+                    if(valid_credit_card(cardnumber.val()))
+                    {
 
+                    }else{
+                        alert("Please enter a valid credit card number");
+                        return false;
+                    }
+                }else{
+                    alert("Please enter all of your billing info");
+                    return false;
+                }
+            }else{
+                alert("Please be sure to fill in all of the required info");
+                return false;
+            }
+        }else{
+            alert("Make sure you've specified the amount of weeks and your Ad Text");
+            return false;
+        }
     }
 
     // For progress box buttons

@@ -74,7 +74,7 @@ $currentTime = time() + 3600;
         <div class="innerCheckoutMain">
             <form action="" id="checkoutMain">
                 <div class="checkoutPage checkoutPageFirst active" id="checkoutPage1">
-                    <div class="topPageHead col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <div class="topPageHead col-lg-8 col-md-8 col-sm-8 col-xs-12">
                         <div class="innerHead">
                             <h3>Choose a size</h3>
                         </div>
@@ -139,7 +139,7 @@ $currentTime = time() + 3600;
                     </div>
                 </div>
                 <div class="checkoutPage checkoutPageSecond hidden clearfix" id="checkoutPage2">
-                    <div class="topPageHead col-lg-8">
+                    <div class="topPageHead col-lg-8 col-md-8 col-sm-8 col-xs-12">
                         <div class="innerHead">
                             <h3>Add the text</h3>
                         </div>
@@ -147,12 +147,12 @@ $currentTime = time() + 3600;
                     <div class="innerPageMain col-lg-9 col-md-9">
                         <div class="selectHold clearfix">
                             <div class="dropDownInner clearfix">
-                                <div class="dropDownLabelHold col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                <div class="dropDownLabelHold col-lg-10 col-md-10 col-sm-10 col-xs-9">
                                     <div class="inner">
                                         <h3 class="dropDownLabel">Select a category</h3>
                                     </div>
                                 </div>
-                                <div class="dropDownButton col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <div class="dropDownButton col-lg-2 col-md-2 col-sm-2 col-xs-3">
                                     <div class="inner">
                                         <h2><i class="fa fa-caret-down" aria-hidden="true"></i></h2>
                                     </div>
@@ -172,12 +172,12 @@ $currentTime = time() + 3600;
                     </div>
                 </div>
                 <div class="checkoutPage checkoutPageThird hidden clearfix" id="checkoutPage3">
-                    <div class="topPageHead col-lg-8">
+                    <div class="topPageHead col-lg-8 col-md-8 col-sm-8 col-xs-12">
                         <div class="innerHead">
                             <h3>Add billing info</h3>
                         </div>
                     </div>
-                    <div class="innerPageMain col-lg-12">
+                    <div class="innerPageMain clearfix col-lg-12 col-xs-12">
                         <div class="leftColumn col-lg-6 col-xs-12">
                             <div class="inputType">
                                 <input type="text" name="fullName" id="fullName" placeholder="Full Name" />
@@ -213,10 +213,10 @@ $currentTime = time() + 3600;
                                         </div>
                                         <div class="exp">
                                             <h3>EXP</h3>
-                                            <div class="inputType col-lg-6">
+                                            <div class="inputType col-lg-6 col-xs-6">
                                                 <input type="text" name="expireYear" id="expireYear" placeholder="Year" />
                                             </div>
-                                            <div class="inputType col-lg-6">
+                                            <div class="inputType col-lg-6 col-xs-6">
                                                 <input type="text" name="expireMonth" id="expireMonth" placeholder="Month" />
                                             </div>
                                         </div>
@@ -230,7 +230,7 @@ $currentTime = time() + 3600;
                     </div>
                 </div>
                 <div class="checkoutPage checkoutPageFourth hidden" id="checkoutPage4">
-                    <div class="topPageHead col-lg-8">
+                    <div class="topPageHead col-lg-8 col-md-8 col-sm-8 col-xs-12">
                         <div class="innerHead">
                             <h3>Success!</h3>
                         </div>

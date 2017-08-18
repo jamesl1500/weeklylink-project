@@ -68,8 +68,12 @@ $primaryFont: 'Titillium Web';
     position: relative;
     top: 68px;
 
-    @media screen and (max-width: 774px) {
-top: 60px;
+    @media screen and (max-width: 774px) and (min-width: 401px){
+      top: 60px;
+    }
+
+    @media screen and (max-width: 400px){
+      top: 55px;
     }
 
       .progressBox {
@@ -85,10 +89,15 @@ top: 60px;
 
       cursor: pointer;
 
-      @media screen and (max-width: 774px){
+      @media screen and (max-width: 774px) and (min-width: 401px){
         height: 70px;
         width: 70px;
       }
+
+        @media screen and (max-width: 400px){
+          height: 60px;
+          width: 60px;
+        }
     }
 
     .progressBox.active{
@@ -130,7 +139,7 @@ top: 60px;
   }
 
   @media screen and (max-width: 774px){
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -139,8 +148,16 @@ top: 60px;
   position: relative;
   top: -100px;
 
-  .topHead{
+  @media screen and (max-width: 400px) {
+    top: -130px;
+  }
+
+    .topHead{
     height: 300px;
+
+      @media screen and (max-width: 400px) {
+        height: 240px;
+      }
 
     .bottomMain {
       position: relative;
@@ -222,9 +239,20 @@ top: 60px;
 
   height: 220px;
 
-  @media screen and (max-width: 774px){
+  @media screen and (max-width: 774px) and (min-width: 401px){
+    top: 60px;
     height: auto;
+
+    width: 300px;
   }
+
+  @media screen and (max-width: 400px){
+    top: 55px;
+    width: 70%;
+
+    height: 200px;
+  }
+
 
   .topNotice{
     position: relative;
@@ -236,8 +264,13 @@ top: 60px;
 
     margin-bottom: -60px;
 
-    @media screen and (max-width: 774px){
+    @media screen and (max-width: 774px) and (min-width: 401px){
       margin-bottom: -120px;
+    }
+
+    @media screen and (max-width: 400px){
+      top: -110px;
+      margin-bottom: -110px;
     }
 
     .leftIcon{
@@ -247,8 +280,14 @@ top: 60px;
       top: -19px;
       margin-bottom: -21px;
 
-      @media screen and (max-width: 774px){
+      @media screen and (max-width: 774px) and (min-width: 401px){
         top: 55px;
+      }
+
+      @media screen and (max-width: 400px){
+        top: 44px;
+        left: -27px;
+
       }
 
       i {
@@ -265,6 +304,15 @@ top: 60px;
         background: #ed1c24;
 
         font-size: 2.5em;
+
+        @media screen and (max-width: 774px) and (min-width: 401px){
+          //font-size: 1.5em;
+        }
+
+        @media screen and (max-width: 400px){
+          font-size: 1.5em;
+          padding: 14px 16px;
+        }
       }
     }
 
@@ -292,13 +340,26 @@ top: 60px;
 
     float: left;
 
-    @media screen and (max-width: 774px){
+    @media screen and (max-width: 774px) and (min-width: 401px){
       margin-top: 15px;
+    }
+
+    @media screen and (max-width: 400px){
+      margin-top: 15px;
+
+      height: 140px;
+      overflow: auto;
+
+      padding-bottom: 10px;
     }
 
     p{
       text-align: left;
       line-height: 1.3em;
+
+      @media screen and (max-width: 400px){
+        font-size: .7em;
+      }
     }
   }
 }
@@ -544,6 +605,10 @@ top: 60px;
       }
 
       .rightActions{
+        @media screen and (max-width: 400px) {
+          margin-left: -13px;
+          padding: 0px;
+        }
 
         .innerMainDrops{
 
@@ -553,9 +618,13 @@ top: 60px;
               margin-bottom: 14px;
               text-align: right;
 
-              @media screen and (max-width: 774px){
+              @media screen and (max-width: 774px) and (min-width: 401px){
                 text-align: center;
                 padding-left: 75px;
+              }
+
+              @media screen and (max-width: 400px) {
+                font-size: 1em;
               }
             }
 
@@ -727,6 +796,8 @@ top: 60px;
           padding-right: 0px;
           padding-left: 11px;
 
+
+
           .inner {
             background: rgb(188, 224, 198);
 
@@ -743,6 +814,13 @@ top: 60px;
               padding-top: 12px;
 
               text-align: center;
+
+              @media screen and (max-width: 774px){
+                font-weight: bold;
+                font-size: 1em;
+                padding-top: 18px;
+
+              }
             }
           }
         }
@@ -750,6 +828,10 @@ top: 60px;
         .dropDownButton{
           cursor: pointer;
           padding-right: 10px;
+
+          @media screen and (max-width: 774px){
+            padding-left: 4px;
+          }
 
           .inner {
             background: rgb(216, 232, 213);
@@ -792,6 +874,10 @@ top: 60px;
         margin-bottom: 10px;
 
         color: #5a5858;
+
+        @media screen and (max-width: 774px){
+          font-size: 1.2em;
+        }
       }
 
       textarea{
@@ -832,8 +918,13 @@ top: 60px;
 // Checkout page 3
 .checkoutPageThird{
 
+
   .innerPageMain{
     background: white !important;
+
+    @media screen and (max-width: 774px){
+      padding: 0px !important;
+    }
 
     .leftColumn{
       height: 500px;
@@ -869,6 +960,13 @@ top: 60px;
 
     .rightColumn{
       height: 500px;
+
+      @media screen and (max-width: 774px){
+        padding-right: 5px;
+        padding-left: 5px;
+
+        height: 400px;
+      }
 
       .innerColumn {
         background: #bce0c6;

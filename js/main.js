@@ -83,6 +83,10 @@ $(function(){
         return (nCheck % 10) == 0;
     }
 
+    $(".dropDownButton").on('click', function(){
+       $(".dropDownList").toggle();
+    });
+
     function formCheck()
     {
         if(weeksInput.val() != "" && mainAdText.val() != "")
@@ -96,7 +100,7 @@ $(function(){
                     // Check credit card
                     if(valid_credit_card(cardnumber.val()))
                     {
-
+                        return false;
                     }else{
                         alert("Please enter a valid credit card number");
                         return false;

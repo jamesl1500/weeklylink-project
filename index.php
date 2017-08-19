@@ -157,10 +157,14 @@ $currentTime = time() + 3600;
                                         <h2><i class="fa fa-caret-down" aria-hidden="true"></i></h2>
                                     </div>
                                 </div>
-                                <div class="dropDownList">
-                                    <ul class="innerCategoriesList">
-
-                                    </ul>
+                                <div class="dropDownList col-lg-12 clearfix">
+                                    <div class="inner">
+                                        <ul class="innerCategoriesList">
+                                            <li>First Cat</li>
+                                            <li>Second Cat</li>
+                                            <li>Third Cat</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
